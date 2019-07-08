@@ -13,8 +13,8 @@ const game = document.querySelector('#game'),
         
 
 
-        // minNum.textContent = min ;
-        // maxNum.textContent = max;
+        minNum.textContent = min ;
+        maxNum.textContent = max;
 
 
         //function get nim mum
