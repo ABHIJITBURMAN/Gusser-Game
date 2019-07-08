@@ -34,8 +34,8 @@ const game = document.querySelector('#game'),
         paragrap = document.querySelector('.paragrap');
         playAgain = document.querySelector('.play-again');
         
-        minNum.style.color = 'red';
-        maxNum.style.color = 'red';
+        
+        
 
 
 //         minNum.textContent = min ;
@@ -47,6 +47,7 @@ const game = document.querySelector('#game'),
         function getMinNum(){
             if(localStorage.getItem('minNum') === null || localStorage.getItem('minNum')==='')
             {
+                minNum.style.color = 'red';
                 minNum.textContent = '[Enter Min Number]';
             }
             else{
@@ -57,6 +58,7 @@ const game = document.querySelector('#game'),
 
         function getMaxNum(){
             if(localStorage.getItem('maxNum') === null || localStorage.getItem('maxNum')===''){
+                maxNum.style.color = 'red';
                 maxNum.textContent = '[Enter Max Number]';
             }
             else{
