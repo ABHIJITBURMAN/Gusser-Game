@@ -80,8 +80,8 @@ const game = document.querySelector('#game'),
 
         let min = parseInt(minNum.textContent);
         let max = parseInt(maxNum.textContent);
-        // console.log(min);
-        // console.log(max);
+        console.log(min);
+        console.log(max);
         let winNum = randomNum(min,max);
         // console.log  (winNum);
 
