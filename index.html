@@ -137,6 +137,8 @@ const game = document.querySelector('#game'),
                     guessInput.disabled = true;
                     minNum.textContent = null;
                     maxNum.textContent = null;
+                    localStorage.setItem('minNum', e.target.innerText);
+                        localStorage.setItem('maxNum', e.target.innerText);
                     showMessage('Congratulate, You have given the correct answer!!!!!!', 'green');
                     guessBtn.value = 'Play Again';
                     guessBtn.className = 'play-again';
@@ -150,6 +152,8 @@ const game = document.querySelector('#game'),
                         guessInput.disabled = true;
                         minNum.textContent = null;
                         maxNum.textContent = null;
+                        localStorage.setItem('minNum', e.target.innerText);
+                        localStorage.setItem('maxNum', e.target.innerText);
                         showMessage(`Game Over, You Lost, The correct answer is ${winNum}`,'red');
                         guessBtn.value = 'Play Again';
                         guessBtn.className = 'play-again';
