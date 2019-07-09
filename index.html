@@ -135,10 +135,8 @@ const game = document.querySelector('#game'),
                 if(guessNum === winNum)
                 {
                     guessInput.disabled = true;
-                    minNum.textContent = null;
-                    maxNum.textContent = null;
-                    localStorage.setItem('minNum', e.target.innerText);
-                        localStorage.setItem('maxNum', e.target.innerText);
+                    localStorage.setItem('minNum','null');
+                    localStorage.setItem('maxNum', 'null');
                     showMessage('Congratulate, You have given the correct answer!!!!!!', 'green');
                     guessBtn.value = 'Play Again';
                     guessBtn.className = 'play-again';
@@ -150,10 +148,8 @@ const game = document.querySelector('#game'),
                     if(guessLeft == 0)
                     {
                         guessInput.disabled = true;
-                        minNum.textContent = null;
-                        maxNum.textContent = null;
-                        localStorage.setItem('minNum', e.target.innerText);
-                        localStorage.setItem('maxNum', e.target.innerText);
+                        localStorage.setItem('minNum','null');
+                        localStorage.setItem('maxNum', 'null');
                         showMessage(`Game Over, You Lost, The correct answer is ${winNum}`,'red');
                         guessBtn.value = 'Play Again';
                         guessBtn.className = 'play-again';
