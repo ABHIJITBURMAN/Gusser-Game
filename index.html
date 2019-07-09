@@ -47,6 +47,7 @@ const game = document.querySelector('#game'),
         function getMinNum(){
             if(localStorage.getItem('minNum') == null || localStorage.getItem('minNum')=='' || isNaN(localStorage.getItem('minNum))
             {
+                console.log('hello);                                                                                                     
                 minNum.style.color = 'red';
                 minNum.textContent = '[Enter Min Number]';
             }
