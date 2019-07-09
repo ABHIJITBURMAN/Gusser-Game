@@ -45,7 +45,7 @@ const game = document.querySelector('#game'),
         //function get nim mum
 
         function getMinNum(){
-            if(localStorage.getItem('minNum') == null || localStorage.getItem('minNum')=='' || isNaN(localStorage.getItem('minNum')))
+            if(localStorage.getItem('minNum') == null || localStorage.getItem('minNum')=='' || isNaN(localStorage.getItem('minNum'))
             {
                 console.log('hello);                                                                                                     
                 minNum.style.color = 'red';
@@ -58,7 +58,7 @@ const game = document.querySelector('#game'),
         //function to get maxi number
 
         function getMaxNum(){
-            if(localStorage.getItem('maxNum') == null || localStorage.getItem('maxNum')=='' || isNaN(localStorage.getItem('maxNum'))){
+            if(localStorage.getItem('maxNum') == null || localStorage.getItem('maxNum')=='' || isNaN(localStorage.getItem('maxNum')){
                 maxNum.style.color = 'red';
                 maxNum.textContent = '[Enter Max Number]';
             }
